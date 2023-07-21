@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         @media screen and (max-width:576px) {
+            .images{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                width: 100%;
+                align-content: center;
+                
+            }
+            img{
+                width: 100%;
+                border: 5px solid #000000;
+                border-radius: 3px;
+            }
+            
+            
+        } 
+        @media screen and (min-width:576px) {
+            
+            .images{
+            width: 100%;
+            display: grid;
+            grid-template-rows: repeat(3,1fr);
+            grid-template-columns: repeat(3,1fr);
+            
+            row-gap: 50px;
+            column-gap: 50px;
+        }
+        img{
+            width: 100%;
+            border: 5px solid #000000;
+            border-radius: 3px;
+            
+        } 
+       
+            
+        } 
+        
+      
+         
+        
+        
+
+    </style>
+</head>
+<body>
+    <h1>Random images</h1>
+    <div class="images">
+        <div class="photo"> <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt=""></div>
+        <div class="photo"> <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt=""></div>
+        <div class="photo"> <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt=""></div>
+        <div class="photo"> <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt=""></div>
+        <div class="photo"> <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt=""></div>
+        <div class="photo"> <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt=""></div>
+       
+        
+    </div>
+</body>
+</html>
